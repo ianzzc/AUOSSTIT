@@ -2,8 +2,11 @@ const express = require('express')
 const router = express.Router()
 
 /* GET home page. */
-router.use('/', (req, res, next) => {
-  res.send('Home Page')
+
+router.get('/', (req, res, next) => {
+  console.log(typeof (router.stack))
+  res.send('Home')
 })
 
+// router is a function
 module.exports = router
