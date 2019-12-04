@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const indexRouter = require('./routes/index')
 const apiRouter = require('./routes/api')
+const dbconfig = require('./db')
+// db setup
+dbconfig()
 // setup routes
 app.use('/', indexRouter)
 app.use('/api', apiRouter)
