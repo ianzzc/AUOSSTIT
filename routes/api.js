@@ -8,5 +8,8 @@ router.get('/', (req, res, next) => {
 router.get('/user', (req, res, next) => {
   res.send('API User Page')
 })
+router.post('/mainSearch', (req, res, next) => {
+  res.send('mainSearch Page')
+})
 
 module.exports = router
